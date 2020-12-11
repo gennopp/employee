@@ -2,13 +2,22 @@
 
 Run these in order
 
-mongod --port 12345 (in other terminal)
+mongod --port 12345 (in seperate terminal)
 
 In node terminal
 
-1.) npm i
+1.) mongo zet_cc_abhishek < empJson.js
 
-2.) mongo zet_cc_abhishek < empJson.js
+2.) npm i
 
 3.) npm start
 
+API EndPoints:
+
+1.) To get the list of employees:- localhost:3000/api/employees (get)
+
+2.) To add an employee:- localhost:3000/api/employees (post)
+
+3.) To update an employee:- localhost:3000/api/employees/:employeeId (put)
+
+3.) To delete an employee:- localhost:3000/api/employees/:employeeId (delete)
