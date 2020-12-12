@@ -84,7 +84,7 @@ request:-
  response:-
  {
     
-    "statusCode": 
+    "statusCode": 200
  }
 
 
@@ -102,7 +102,9 @@ request:-
     
     "img": string (base64)
   }
+  
  response:-
  {
+ 
     "statusCode": 204
  }
