@@ -2,7 +2,9 @@
 
 Run these in order
 
-install mongodb
+install mongodb from 
+
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
 
 mongod --port 12345 (in seperate terminal)
 
