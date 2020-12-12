@@ -18,6 +18,7 @@ In node terminal
 
 API EndPoints:
 
+
 1.) To get the list of employees:- /api/employees (get)
 
 response:-
@@ -35,6 +36,28 @@ response:-
     
     "img": string (base64)
 }
+
+1.1.) To get an employee:- /api/employees/employeeId (get)
+
+response
+{
+    
+     "id": number,
+  
+     "name" :string,
+    
+    "dob": string,
+    
+    "salary": number,
+    
+    "skills": array,
+    
+    "img": string (base64)
+
+}
+
+
+
 
 2.) To add an employee:- /api/employees (post)
 
