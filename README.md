@@ -58,8 +58,18 @@ request:-
  response:-
  
  {
- 
-    "statusCode": 200 
+
+    "id": number,
+  
+     "name" :string,
+    
+    "dob": string,
+    
+    "salary": number,
+    
+    "skills": array,
+    
+    "img": string (base64)
     
  }
 
