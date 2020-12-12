@@ -14,10 +14,80 @@ In node terminal
 
 API EndPoints:
 
-1.) To get the list of employees:- localhost:3000/api/employees (get)
+1.) To get the list of employees:- /api/employees (get)
 
-2.) To add an employee:- localhost:3000/api/employees (post)
+2.) To add an employee:- /api/employees (post)
 
-3.) To update an employee:- localhost:3000/api/employees/:employeeId (put)
+request:-
+  {
+    "name" :string,
+    
+    "dob": string,
+    
+    "salary": number,
+    
+    "skills": array,
+    
+    "img": string (base64)
+    
+  }
+ response:-
+ {
+    "name" :string,
+    
+    "dob": string,
+    
+    "salary": number,
+    
+    "skills": array,
+    
+    "img": string (base64)"
+ }
 
-3.) To delete an employee:- localhost:3000/api/employees/:employeeId (delete)
+3.) To update an employee:- /api/employees/:employeeId (put)
+request:-
+request:-
+  {
+    "name" :string,
+    
+    "dob": string,
+    
+    "salary": number,
+    
+    "skills": array,
+    
+    "img": string (base64)
+    
+  }
+ response:-
+ {
+    "name" :string,
+    
+    "dob": string,
+    
+    "salary": number,
+    
+    "skills": array,
+    
+    "img": string (base64)"
+ }
+
+
+4.) To delete an employee:- localhost:3000/api/employees/:employeeId (delete)
+
+request:-
+  {
+    "name" :string,
+    
+    "dob": string,
+    
+    "salary": number,
+    
+    "skills": array,
+    
+    "img": string (base64)
+  }
+ response:-
+ {
+    "statusCode": 204
+ }
