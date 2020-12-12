@@ -18,14 +18,28 @@ API EndPoints:
 
 1.) To get the list of employees:- /api/employees (get)
 
+response:-
+{
+
+    "id": number,
+  
+     "name" :string,
+    
+    "dob": string,
+    
+    "salary": number,
+    
+    "skills": array,
+    
+    "img": string (base64)
+}
+
 2.) To add an employee:- /api/employees (post)
 
 
 request:-
 
   {
-  
-    "id": Number,
     
     "name" :string,
     
