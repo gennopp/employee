@@ -82,17 +82,7 @@ request:-
  
  {
 
-    "id": number,
-  
-     "name" :string,
-    
-    "dob": string,
-    
-    "salary": number,
-    
-    "skills": array,
-    
-    "img": string (base64)
+   "statusCode": 200
     
  }
 
