@@ -7,6 +7,9 @@ const db = mongoose.createConnection('mongodb://localhost/zet_cc_abhishek');
 const empRouter = express.Router();
 const port = process.env.PORT || 3000;
 
+const cors = require('cors')
+app.use(cors());
+
 const Employee = require('./models/empModel');
 
 
@@ -59,7 +62,7 @@ empRouter.route('/employees/:employeeId')
         employee.img = req.body.img;
 
         employee.save();
-        return res.json(employee);
+        return res.sendStatus(200);
       }
     });
   })
