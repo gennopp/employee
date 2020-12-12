@@ -2,6 +2,8 @@
 
 Run these in order
 
+install mongodb
+
 mongod --port 12345 (in seperate terminal)
 
 In node terminal
@@ -18,8 +20,13 @@ API EndPoints:
 
 2.) To add an employee:- /api/employees (post)
 
+
 request:-
+
   {
+  
+    "id": Number,
+    
     "name" :string,
     
     "dob": string,
@@ -31,23 +38,21 @@ request:-
     "img": string (base64)
     
   }
+  
  response:-
+ 
  {
-    "name" :string,
+ 
+    "statusCode": 200 
     
-    "dob": string,
-    
-    "salary": number,
-    
-    "skills": array,
-    
-    "img": string (base64)"
  }
 
 3.) To update an employee:- /api/employees/:employeeId (put)
+
 request:-
-request:-
+
   {
+  
     "name" :string,
     
     "dob": string,
@@ -59,17 +64,11 @@ request:-
     "img": string (base64)
     
   }
+  
  response:-
  {
-    "name" :string,
     
-    "dob": string,
-    
-    "salary": number,
-    
-    "skills": array,
-    
-    "img": string (base64)"
+    "statusCode": 
  }
 
 
